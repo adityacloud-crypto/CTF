@@ -1,0 +1,7 @@
+flag{onion_crypto_layer2}
+
+
+Steps used (admin): Vigenère encrypt plaintext with key hackathon, apply ROT13, base64 encode result.
+We’ll give players only the final token.
+
+That string decodes back to flag{onion_crypto_layer2} using Base64 → ROT13 → Vigenère(key=hackathon).)

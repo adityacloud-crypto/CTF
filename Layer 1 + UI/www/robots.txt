@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin
+Disallow: /secret
+
+# Hint: Some secrets move off the main roads.
+# Check the map at: /secret/robots-clue.txt

@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+# fallback challenge: players can read or run this
+print("Enter password: ", end="", flush=True)
+p = input().strip()
+if p == "reverse_engineering_layer_two!!":
+    print("flag{deep_reverse_layer2}")
+else:
+    print("Nope.")
