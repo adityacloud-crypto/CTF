@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeginnersQuest - HackWithIndia CTF</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Animated Background -->
+  <div class="bg-pattern"></div>
+  <div class="bg-grid"></div>
+
+  <!-- Terminal Header -->
+  <header class="terminal-header">
+    <div class="terminal-bar">
+      <span class="terminal-text">&gt; BeginnersQuest</span>
+    </div>
+  </header>
+
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <div class="sidebar-item">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="rules.html">Rules</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="faq.html">FAQ</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="challenges.html">Hackceler8</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="beginners.html">BeginnersQuest</a>
+    </div>
+  </nav>
+
+  <!-- Beginners Content -->
+  <main class="content-page">
+    <div class="content-box">
+      <!-- Hero Banner like Google CTF -->
+      <div class="beginners-hero">
+        <div class="hero-graphic">
+          <svg viewBox="0 0 300 150" class="quest-graphic">
+            <rect x="50" y="50" width="80" height="80" fill="#9aff00" stroke="#000" stroke-width="3"/>
+            <polygon points="220,130 180,70 260,70" fill="#000" stroke="#000" stroke-width="3"/>
+            <line x1="150" y1="90" x2="170" y2="90" stroke="#000" stroke-width="4"/>
+          </svg>
+        </div>
+        <h1 class="beginners-title">BeginnersQuest</h1>
+        <p class="beginners-tagline">Your first step into cybersecurity</p>
+      </div>
+
+      <div class="quest-intro">
+        <h2 class="section-title">Welcome, Beginner Hacker!</h2>
+        <p class="intro-text">Start your journey here with web-based challenges designed for newcomers. No prior experience needed – just curiosity and determination!</p>
+      </div>
+
+      <!-- Layer 1 Overview -->
+      <div class="challenge-section">
+        <h2 class="layer-heading">LAYER 1: WEB DISCOVERY</h2>
+        <p class="unlock-status">✅ Available now - Start here!</p>
+        
+        <div class="challenge-card beginner">
+          <h3 class="challenge-title">Challenge 1: HTML Comment Flag</h3>
+          <div class="challenge-meta">
+            <span class="points">10 points</span>
+            <span class="category">Web</span>
+            <span class="difficulty easy">Easy</span>
+          </div>
+          <p class="challenge-desc">The first flag is hidden in an HTML comment on the landing page.</p>
+          
+          <div class="walkthrough">
+            <h4>📝 Step-by-Step Walkthrough:</h4>
+            <ol>
+              <li>Right-click on the home page</li>
+              <li>Select "View Page Source" (or press <code>Ctrl+U</code>)</li>
+              <li>Look for HTML comments (they look like <code>&lt;!-- comment --&gt;</code>)</li>
+              <li>Find a long base64-encoded string in a comment</li>
+              <li>Copy the string and decode it using <a href="https://www.base64decode.org/" target="_blank">base64decode.org</a></li>
+              <li>Submit the decoded flag in CTFd!</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="challenge-card beginner">
+          <h3 class="challenge-title">Challenge 2: Hidden CSS Flag</h3>
+          <div class="challenge-meta">
+            <span class="points">10 points</span>
+            <span class="category">Web</span>
+            <span class="difficulty easy">Easy</span>
+          </div>
+          <p class="challenge-desc">The second flag is hidden using CSS styling tricks.</p>
+          
+          <div class="walkthrough">
+            <h4>📝 Step-by-Step Walkthrough:</h4>
+            <ol>
+              <li>Open the home page</li>
+              <li>Press <code>F12</code> to open Browser DevTools</li>
+              <li>Go to the "Elements" or "Inspector" tab</li>
+              <li>Look for elements with suspicious CSS styling</li>
+              <li>Check for: <code>display:none</code>, <code>color: transparent</code>, <code>opacity: 0</code></li>
+              <li>Find the hidden text element (class="zflag")</li>
+              <li>Remove spaces from the flag text and submit!</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="challenge-card beginner">
+          <h3 class="challenge-title">Challenge 3: Robots.txt Chain</h3>
+          <div class="challenge-meta">
+            <span class="points">10 points</span>
+            <span class="category">Web</span>
+            <span class="difficulty medium">Medium</span>
+          </div>
+          <p class="challenge-desc">Follow the chain of clues starting from robots.txt.</p>
+          
+          <div class="walkthrough">
+            <h4>📝 Step-by-Step Walkthrough:</h4>
+            <ol>
+              <li>Navigate to <code>http://localhost:8081/robots.txt</code></li>
+              <li>Read the file - it will show "Disallow" paths</li>
+              <li>Visit the disallowed directories/files</li>
+              <li>Follow the breadcrumb trail through multiple files</li>
+              <li>Each file will point to the next location</li>
+              <li>The final file will contain the flag!</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools Guide -->
+      <div class="tools-section">
+        <h2 class="layer-heading">ESSENTIAL TOOLS FOR BEGINNERS</h2>
+        
+        <div class="tool-card">
+          <h3>🌐 Browser DevTools</h3>
+          <p>Press <code>F12</code> or right-click → Inspect</p>
+          <p>Use Elements tab to inspect HTML/CSS, Console for JavaScript</p>
+        </div>
+
+        <div class="tool-card">
+          <h3>📄 View Page Source</h3>
+          <p>Press <code>Ctrl+U</code> or right-click → View Page Source</p>
+          <p>See the raw HTML code including comments</p>
+        </div>
+
+        <div class="tool-card">
+          <h3>🔓 Base64 Decoder</h3>
+          <p><a href="https://www.base64decode.org/" target="_blank">base64decode.org</a></p>
+          <p>Decode base64-encoded strings</p>
+        </div>
+
+        <div class="tool-card">
+          <h3>🧰 CyberChef</h3>
+          <p><a href="https://gchq.github.io/CyberChef/" target="_blank">gchq.github.io/CyberChef</a></p>
+          <p>Swiss Army knife for encoding/decoding/crypto</p>
+        </div>
+      </div>
+
+      <!-- Tips -->
+      <div class="tips-section">
+        <h2 class="layer-heading">💡 BEGINNER TIPS</h2>
+        <ul class="tips-list">
+          <li>Start with Challenge 1 - it's the easiest</li>
+          <li>Read everything carefully - hints are everywhere</li>
+          <li>Google is your friend - search for "how to view HTML comments"</li>
+          <li>Don't be afraid to try things - you can't break anything</li>
+          <li>If stuck for 30 minutes, move to the next challenge</li>
+          <li>Collaborate with your team but don't share flags with others</li>
+          <li>Remember: flags are case-sensitive!</li>
+        </ul>
+      </div>
+
+      <a href="index.html" class="back-button">← Back to Home</a>
+    </div>
+  </main>
+
+  <script src="animations.js"></script>
+</body>
+</html>

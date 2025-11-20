@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - HackWithIndia CTF</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Animated Background -->
+  <div class="bg-pattern"></div>
+  <div class="bg-grid"></div>
+
+  <!-- Terminal Header -->
+  <header class="terminal-header">
+    <div class="terminal-bar">
+      <span class="terminal-text">&gt; FAQ Section</span>
+    </div>
+  </header>
+
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <div class="sidebar-item">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="rules.html">Rules</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="faq.html">FAQ</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="challenges.html">Hackceler8</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="beginners.html">BeginnersQuest</a>
+    </div>
+  </nav>
+
+  <!-- FAQ Content -->
+  <main class="content-page">
+    <div class="content-box">
+      <!-- Hero Graphic -->
+      <div class="page-hero-graphic">
+        <svg viewBox="0 0 200 200" class="graphic-icon">
+          <circle cx="100" cy="100" r="60" fill="none" stroke="#000" stroke-width="3"/>
+          <circle cx="100" cy="100" r="40" fill="none" stroke="#9aff00" stroke-width="3"/>
+          <text x="100" y="110" text-anchor="middle" font-size="50" fill="#000" font-family="Arial">?</text>
+        </svg>
+      </div>
+
+      <h1 class="page-title">Frequently Asked Questions</h1>
+      <p class="subtitle">Everything you need to know</p>
+
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-icon">🏁</div>
+          <h2 class="faq-question">What is the flag format?</h2>
+          <p class="faq-answer">All flags follow the format: <code>FLAG{...}</code> or <code>flag{...}</code></p>
+          <p class="faq-answer">Flags are case-sensitive. Submit the entire flag including braces.</p>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-icon">📤</div>
+          <h2 class="faq-question">How do I submit flags?</h2>
+          <p class="faq-answer">1. Find the flag in the challenge</p>
+          <p class="faq-answer">2. Go to the CTFd platform</p>
+          <p class="faq-answer">3. Navigate to the challenge</p>
+          <p class="faq-answer">4. Paste flag in text input</p>
+          <p class="faq-answer">5. Click Submit</p>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-icon">🎯</div>
+          <h2 class="faq-question">What are the layers?</h2>
+          <p class="faq-answer"><strong>Layer 1: Web Discovery</strong></p>
+          <p class="faq-answer">3 challenges, 30 points</p>
+          <p class="faq-answer"><strong>Layer 2: RE + Crypto</strong></p>
+          <p class="faq-answer">2 challenges, 60 points (unlocks after Layer 1)</p>
+          <p class="faq-answer"><strong>Layer 3: PWN</strong></p>
+          <p class="faq-answer">8 challenges, 400 points (unlocks after Layer 2)</p>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-icon">🛠️</div>
+          <h2 class="faq-question">Can I use any tools?</h2>
+          <p class="faq-answer">Yes! Use any tools, documentation, or online resources.</p>
+          <p class="faq-answer"><strong>Recommended:</strong> Browser DevTools, Ghidra, pwntools, CyberChef, netcat</p>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-icon">🤔</div>
+          <h2 class="faq-question">What if I get stuck?</h2>
+          <p class="faq-answer">• Try a different challenge</p>
+          <p class="faq-answer">• Discuss with your team</p>
+          <p class="faq-answer">• Check the Getting Started guide</p>
+          <p class="faq-answer">• Look for hints in descriptions</p>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-icon">💡</div>
+          <h2 class="faq-question">Are there hints available?</h2>
+          <p class="faq-answer">Some challenges have hints in the CTFd platform.</p>
+          <p class="faq-answer">Layer 1 hints are available on the BeginnersQuest page.</p>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-icon">⏱️</div>
+          <h2 class="faq-question">How long is the event?</h2>
+          <p class="faq-answer">The CTF runs for 3-4 hours.</p>
+          <p class="faq-answer">All challenges remain accessible during this time.</p>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-icon">🎓</div>
+          <h2 class="faq-question">Is this beginner-friendly?</h2>
+          <p class="faq-answer">Yes! Layer 1 is designed for beginners.</p>
+          <p class="faq-answer">Layer 2 is intermediate, Layer 3 is advanced.</p>
+          <p class="faq-answer">Check the BeginnersQuest page for walkthroughs.</p>
+        </div>
+      </div>
+
+      <a href="index.html" class="back-button">← Back to Home</a>
+    </div>
+  </main>
+
+  <script src="animations.js"></script>
+</body>
+</html>

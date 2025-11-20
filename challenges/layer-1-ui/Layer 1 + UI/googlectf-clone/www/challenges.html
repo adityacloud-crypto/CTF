@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackceler8 - HackWithIndia CTF</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Animated Background -->
+  <div class="bg-pattern"></div>
+  <div class="bg-grid"></div>
+
+  <!-- Terminal Header -->
+  <header class="terminal-header">
+    <div class="terminal-bar">
+      <span class="terminal-text">&gt; Hackceler8 (Advanced)</span>
+    </div>
+  </header>
+
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <div class="sidebar-item">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="rules.html">Rules</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="faq.html">FAQ</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="challenges.html">Hackceler8</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="beginners.html">BeginnersQuest</a>
+    </div>
+  </nav>
+
+  <!-- Challenges Content -->
+  <main class="content-page">
+    <div class="content-box">
+      <h1 class="page-title">Hackceler8: Advanced Challenges</h1>
+      <p class="subtitle">Binary exploitation and advanced reverse engineering</p>
+
+      <!-- Layer 2 -->
+      <div class="challenge-section">
+        <h2 class="layer-heading">LAYER 2: REVERSE ENGINEERING + CRYPTO</h2>
+        <p class="unlock-status">🔒 Unlocks after completing all Layer 1 challenges</p>
+        
+        <div class="challenge-card">
+          <h3 class="challenge-title">Challenge 4: DeepCrack Binary</h3>
+          <div class="challenge-meta">
+            <span class="points">30 points</span>
+            <span class="category">Reverse Engineering</span>
+          </div>
+          <p class="challenge-desc">Download and analyze a compiled binary. Extract the flag using reverse engineering techniques.</p>
+          <p class="challenge-tools"><strong>Tools:</strong> Ghidra, strings, hex editor</p>
+        </div>
+
+        <div class="challenge-card">
+          <h3 class="challenge-title">Challenge 5: OnionKeys Cryptography</h3>
+          <div class="challenge-meta">
+            <span class="points">30 points</span>
+            <span class="category">Cryptography</span>
+          </div>
+          <p class="challenge-desc">Decrypt multiple layers of encryption to reveal the flag. Each layer uses a different cipher.</p>
+          <p class="challenge-tools"><strong>Tools:</strong> CyberChef, Python, crypto libraries</p>
+        </div>
+      </div>
+
+      <!-- Layer 3 -->
+      <div class="challenge-section">
+        <h2 class="layer-heading">LAYER 3: BINARY EXPLOITATION (PWN)</h2>
+        <p class="unlock-status">🔒 Unlocks after completing all Layer 2 challenges</p>
+        
+        <div class="challenge-card">
+          <h3 class="challenge-title">Challenge 6: Stack Overflow</h3>
+          <div class="challenge-meta">
+            <span class="points">50 points</span>
+            <span class="category">PWN</span>
+          </div>
+          <p class="challenge-desc">Classic buffer overflow. Control execution flow by overwriting the return address.</p>
+          <p class="challenge-connection"><strong>Connect:</strong> <code>nc localhost 9001</code></p>
+        </div>
+
+        <div class="challenge-card">
+          <h3 class="challenge-title">Challenge 7: Ret2libc</h3>
+          <div class="challenge-meta">
+            <span class="points">50 points</span>
+            <span class="category">PWN</span>
+          </div>
+          <p class="challenge-desc">Bypass NX protection by returning to libc functions.</p>
+          <p class="challenge-connection"><strong>Connect:</strong> <code>nc localhost 9002</code></p>
+        </div>
+
+        <div class="challenge-card">
+          <h3 class="challenge-title">Challenge 8: ROP Chains</h3>
+          <div class="challenge-meta">
+            <span class="points">50 points</span>
+            <span class="category">PWN</span>
+          </div>
+          <p class="challenge-desc">Build a Return-Oriented Programming chain to exploit the binary.</p>
+          <p class="challenge-connection"><strong>Connect:</strong> <code>nc localhost 9003</code></p>
+        </div>
+
+        <div class="challenge-card">
+          <h3 class="challenge-title">Challenge 9: Heap Exploitation</h3>
+          <div class="challenge-meta">
+            <span class="points">50 points</span>
+            <span class="category">PWN</span>
+          </div>
+          <p class="challenge-desc">Exploit heap memory corruption vulnerabilities.</p>
+          <p class="challenge-connection"><strong>Connect:</strong> <code>nc localhost 9004</code></p>
+        </div>
+
+        <div class="challenge-card">
+          <h3 class="challenge-title">Challenge 10: Format String</h3>
+          <div class="challenge-meta">
+            <span class="points">50 points</span>
+            <span class="category">PWN</span>
+          </div>
+          <p class="challenge-desc">Exploit format string vulnerabilities to read/write arbitrary memory.</p>
+          <p class="challenge-connection"><strong>Connect:</strong> <code>nc localhost 9005</code></p>
+        </div>
+
+        <div class="challenge-card">
+          <h3 class="challenge-title">Challenge 11: Integer Overflow</h3>
+          <div class="challenge-meta">
+            <span class="points">50 points</span>
+            <span class="category">PWN</span>
+          </div>
+          <p class="challenge-desc">Exploit integer overflow to bypass security checks.</p>
+          <p class="challenge-connection"><strong>Connect:</strong> <code>nc localhost 9006</code></p>
+        </div>
+
+        <div class="challenge-card">
+          <h3 class="challenge-title">Challenge 12: Off-by-One</h3>
+          <div class="challenge-meta">
+            <span class="points">50 points</span>
+            <span class="category">PWN</span>
+          </div>
+          <p class="challenge-desc">Exploit an off-by-one vulnerability to gain code execution.</p>
+          <p class="challenge-connection"><strong>Connect:</strong> <code>nc localhost 9007</code></p>
+        </div>
+
+        <div class="challenge-card">
+          <h3 class="challenge-title">Challenge 13: Protocol Reverse</h3>
+          <div class="challenge-meta">
+            <span class="points">50 points</span>
+            <span class="category">PWN</span>
+          </div>
+          <p class="challenge-desc">Reverse engineer a custom network protocol and exploit it.</p>
+          <p class="challenge-connection"><strong>Connect:</strong> <code>nc localhost 9010</code></p>
+        </div>
+      </div>
+
+      <div class="total-points">
+        <strong>Total Advanced Challenges:</strong> 10 challenges, 460 points
+      </div>
+
+      <a href="index.html" class="back-button">← Back to Home</a>
+    </div>
+  </main>
+
+  <script src="animations.js"></script>
+</body>
+</html>
